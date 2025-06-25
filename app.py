@@ -1,6 +1,9 @@
 import nltk
+nltk.data.path.append("nltk_data")
+
 nltk.download('punkt')# Download punkt tokenizer for word_tokenize
 nltk.download('stopwords')
+
 
 import streamlit as st
 import pickle
@@ -73,3 +76,6 @@ if predict:
 st.markdown("---")
 st.markdown("<p style='text-align: center; font-size: 13px;'>Made with ❤️ using Streamlit & Scikit-learn</p>",
             unsafe_allow_html=True)
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
